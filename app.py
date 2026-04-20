@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
 # 1. Design the Website Header
-st.title("🐾 PrimePawz A.I. Predictor")
+st.title("ChurnIQ Analytics")
 st.write("Welcome to the Manager Dashboard. Enter customer data below to predict if they will return!")
 
 # 2. Train the AI Brain (Quietly in the background)
