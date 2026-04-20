@@ -2,6 +2,24 @@ import streamlit as st
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier
 
+
+# --- THE MAGIC PAINTBRUSH (CSS INJECTION) ---
+page_bg_gradient = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(to bottom right, #4A00E0, #8E2DE2);
+    color: white; 
+}
+[data-testid="stHeader"] {
+    background: rgba(0,0,0,0); /* Makes the top header invisible */
+}
+</style>
+"""
+st.markdown(page_bg_gradient, unsafe_allow_html=True)
+# --------------------------------------------
+
+# ... (The rest of your normal code starting with st.title goes below here!) ...
+
 # 1. Design the Website Header
 st.title("ChurnIQ Analytics")
 st.write("Welcome to the Manager Dashboard. Enter customer data below to predict if they will return!")
